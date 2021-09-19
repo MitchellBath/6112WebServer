@@ -33,6 +33,7 @@ const requestListener = function (req, res) {
     //res.end("Howdy");
     data.forEach((row) => {
         res.write(row.firstname.toString() + ' ' + row.lastname.toString() + '\n');
+        console.log(row.firstname.toString() + ' ' + row.lastname.toString() + '\n');
     })
     res.end();
 };
